@@ -1,0 +1,37 @@
+<%@page import="java.time.LocalDate"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Form</title>
+</head>
+<body>
+	<h3>Login Form</h3>
+	<form action ="submitForm" method="post">
+	<input type ="text" name ="email1" placeholder="Enter Email"/> <br><br>
+	<input type ="password" name="pass1" placeholder="Enter Password"/> <br><br>
+	<input type ="submit" value="Login">
+	</form>
+	<%!
+		int a = 10;
+		String name = "Xader";
+		
+		int square(){
+			return a*a;
+		}
+	%>
+	
+	<%
+		out.println("A :" + a);
+		out.println("Name: " + name);
+		out.println(square()); 
+		
+		for(int i = 0; i<=5; i++){
+			out.println(i);
+		}
+	%>
+</body>
+
+</html>
