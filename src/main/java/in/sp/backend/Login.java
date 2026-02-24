@@ -30,10 +30,10 @@ public class Login extends HttpServlet{
 		}
 		else {
 			resp.setContentType("text/html");
-			out.print("Email id and Password didn't matched");
+			out.print("Email id and Pass ord didn't matched");
 			RequestDispatcher rd = req.getRequestDispatcher("/index.jsp");
 			rd.include(req, resp);
 		}
-	
+		
 	}
 }
